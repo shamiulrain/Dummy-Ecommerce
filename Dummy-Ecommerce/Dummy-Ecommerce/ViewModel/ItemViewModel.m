@@ -67,7 +67,7 @@
         item.shopID = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"shop_id"]];
         item.category = [NSString stringWithFormat:@"%@",[eachObject objectForKey:@"category"]];
         item.imageURL = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"image"]];
-        item.price = (NSInteger)[eachObject objectForKey:@"price"];
+        item.price= [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"price"]];
         [itemList addObject:item];
     }
     

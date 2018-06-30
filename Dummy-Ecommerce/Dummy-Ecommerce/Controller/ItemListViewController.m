@@ -54,7 +54,7 @@
     }
     
     if(item.price) {
-        cell.priceLabel.text = [NSString stringWithFormat:@"Price: %ld",item.price];
+        cell.priceLabel.text = [NSString stringWithFormat:@"Price: %@",item.price];
     }
     
     if(item.imageURL && item.imageURL.length >0 ) {
@@ -85,10 +85,34 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(90, 90);
+    return CGSizeMake(200, 200);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Item *item = [self.itemList objectAtIndex:indexPath.row];
+    
+    NSString *msg = [NSString stringWithFormat:@"How many of %@ you want?",item.itemName];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:msg message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                                    textField.placeholder = @"How many?";
+                                }];
+    
+    UIAlertAction *doneAction = [UIAlertAction actionWithTitle:@"Done" style:UIAlertActionStyleDefault   handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *textfield = alert.textFields.firstObject;
+        
+    }];
+    UIAlertAction *noneAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    
+    [alert addAction:doneAction];
+    [alert addAction:noneAction];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:alert animated:YES completion:^{
+            [self.collectionView reloadData];
+        }];
+    });
     
 }
 

@@ -13,7 +13,7 @@
 @property (nonatomic, strong) NSString *itemID;
 @property (nonatomic, strong) NSString *itemName;
 @property (nonatomic, strong) NSString *category;
-@property (nonatomic, assign) NSInteger price;
+@property (nonatomic, strong) NSString *price;
 @property (nonatomic, strong) NSString *shopID;
 @property (nonatomic, strong) NSString *imageURL;
 @end
