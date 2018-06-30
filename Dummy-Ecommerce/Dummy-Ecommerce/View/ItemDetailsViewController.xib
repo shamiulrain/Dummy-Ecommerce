@@ -1,13 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemDetailsViewController">
             <connections>
+                <outlet property="countLabel" destination="6Wb-LY-V1E" id="CfZ-vC-zv5"/>
+                <outlet property="itemImageView" destination="tVD-17-G18" id="axV-P6-aAt"/>
+                <outlet property="nameLabel" destination="jmS-Jn-meu" id="TOf-wS-cLD"/>
+                <outlet property="priceLabel" destination="fIo-nm-JsQ" id="Lgd-E2-9ke"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +23,64 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tVD-17-G18">
+                    <rect key="frame" x="137" y="60" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="1Km-XV-ube"/>
+                        <constraint firstAttribute="height" constant="100" id="9k3-zn-Idm"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmS-Jn-meu" userLabel="Item Name">
+                    <rect key="frame" x="166" y="180" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIo-nm-JsQ" userLabel="Item Price">
+                    <rect key="frame" x="166" y="221" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wb-LY-V1E" userLabel="Item Count">
+                    <rect key="frame" x="166.5" y="262" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ3-ka-nOd">
+                    <rect key="frame" x="208.5" y="257" width="30" height="30"/>
+                    <state key="normal" title="+"/>
+                    <connections>
+                        <action selector="onButtonPlus:" destination="-1" eventType="touchUpInside" id="rrC-xs-SxI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkW-lu-Mnn">
+                    <rect key="frame" x="136.5" y="257" width="30" height="30"/>
+                    <state key="normal" title="-"/>
+                    <connections>
+                        <action selector="onButtonMinus:" destination="-1" eventType="touchUpInside" id="JgB-ze-75X"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6Wb-LY-V1E" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="1i6-rE-KXY"/>
+                <constraint firstItem="KkW-lu-Mnn" firstAttribute="centerY" secondItem="6Wb-LY-V1E" secondAttribute="centerY" id="8UQ-SM-huN"/>
+                <constraint firstItem="tVD-17-G18" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="AiG-ub-scn"/>
+                <constraint firstItem="KkW-lu-Mnn" firstAttribute="trailing" secondItem="6Wb-LY-V1E" secondAttribute="leading" id="FKg-wY-E4n"/>
+                <constraint firstItem="aQ3-ka-nOd" firstAttribute="leading" secondItem="6Wb-LY-V1E" secondAttribute="trailing" id="SMZ-Wj-Q5P"/>
+                <constraint firstItem="aQ3-ka-nOd" firstAttribute="centerY" secondItem="6Wb-LY-V1E" secondAttribute="centerY" id="Xh3-iN-weZ"/>
+                <constraint firstItem="tVD-17-G18" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="azQ-Dc-DiN"/>
+                <constraint firstItem="fIo-nm-JsQ" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="gcH-dj-fDR"/>
+                <constraint firstItem="jmS-Jn-meu" firstAttribute="top" secondItem="tVD-17-G18" secondAttribute="bottom" constant="20" id="ghx-PN-eXO"/>
+                <constraint firstItem="jmS-Jn-meu" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="klI-kC-XJy"/>
+                <constraint firstItem="6Wb-LY-V1E" firstAttribute="top" secondItem="fIo-nm-JsQ" secondAttribute="bottom" constant="20" id="p3z-QF-Egu"/>
+                <constraint firstItem="fIo-nm-JsQ" firstAttribute="top" secondItem="jmS-Jn-meu" secondAttribute="bottom" constant="20" id="yFt-v3-Efh"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="39.5" y="160.5"/>
         </view>
     </objects>
 </document>

@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ItemDetailsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *itemImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countLabel;
+
+- (IBAction)onButtonPlus:(id)sender;
+- (IBAction)onButtonMinus:(id)sender;
 
 @end

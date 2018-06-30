@@ -8,6 +8,7 @@
 
 #import "ItemListViewController.h"
 #import "ItemCollectionViewCell.h"
+#import "ItemDetailsViewController.h"
 
 @interface ItemListViewController ()<ItemViewModelDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -22,6 +23,8 @@
     
     self.navigationItem.title = self.selectedShop.shopName;
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Cart" style:UIBarButtonItemStylePlain target:self action:@selector(onButtonCart)];
+    
     self.itemList = [[NSMutableArray alloc] init];
     
     static NSString *identifier = @"item_cell";
@@ -32,6 +35,15 @@
     itemViewModel.delegate = self;
     NSString *shopID = [NSString stringWithFormat:@"%ld",[self.selectedShop.shopID integerValue]];
     [itemViewModel requestItemListForShopID:shopID];
+}
+
+- (void) onButtonCart {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+       
+        ItemDetailsViewController *itemDetailsVC = [[ItemDetailsViewController alloc] init];
+        [self.navigationController pushViewController:itemDetailsVC animated:YES];
+    });
 }
 
 #pragma mark - CollectionView methods

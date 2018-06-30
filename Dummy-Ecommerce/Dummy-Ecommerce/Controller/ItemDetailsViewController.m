@@ -34,4 +34,9 @@
 }
 */
 
+- (IBAction)onButtonPlus:(id)sender {
+}
+
+- (IBAction)onButtonMinus:(id)sender {
+}
 @end
