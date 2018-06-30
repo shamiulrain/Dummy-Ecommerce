@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ShopListViewController.h
 //  Dummy-Ecommerce
 //
 //  Created by Tanjim on 30/6/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ShopListViewController : UIViewController
 
 @end
-

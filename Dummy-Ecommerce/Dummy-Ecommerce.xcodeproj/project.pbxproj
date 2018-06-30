@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		3B14419E20E74CFD000AB7D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B14419D20E74CFD000AB7D4 /* AppDelegate.m */; };
-		3B1441A120E74CFD000AB7D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441A020E74CFD000AB7D4 /* ViewController.m */; };
 		3B1441A420E74CFD000AB7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441A220E74CFD000AB7D4 /* Main.storyboard */; };
 		3B1441A620E74CFE000AB7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441A520E74CFE000AB7D4 /* Assets.xcassets */; };
 		3B1441A920E74CFE000AB7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441A720E74CFE000AB7D4 /* LaunchScreen.storyboard */; };
 		3B1441AC20E74CFE000AB7D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441AB20E74CFE000AB7D4 /* main.m */; };
 		3B1441B620E74CFE000AB7D4 /* Dummy_EcommerceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441B520E74CFE000AB7D4 /* Dummy_EcommerceTests.m */; };
+		3B1441C620E74E3C000AB7D4 /* ShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441C420E74E3C000AB7D4 /* ShopListViewController.m */; };
+		3B1441C720E74E3C000AB7D4 /* ShopListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441C520E74E3C000AB7D4 /* ShopListViewController.xib */; };
+		3B1441CB20E74E5F000AB7D4 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441C920E74E5F000AB7D4 /* ItemListViewController.m */; };
+		3B1441CC20E74E5F000AB7D4 /* ItemListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441CA20E74E5F000AB7D4 /* ItemListViewController.xib */; };
+		3B1441D020E74E77000AB7D4 /* ItemDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441CE20E74E77000AB7D4 /* ItemDetailsViewController.m */; };
+		3B1441D120E74E77000AB7D4 /* ItemDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441CF20E74E77000AB7D4 /* ItemDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +35,6 @@
 		3B14419920E74CFD000AB7D4 /* Dummy-Ecommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dummy-Ecommerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B14419C20E74CFD000AB7D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B14419D20E74CFD000AB7D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3B14419F20E74CFD000AB7D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3B1441A020E74CFD000AB7D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3B1441A320E74CFD000AB7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B1441A520E74CFE000AB7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1441A820E74CFE000AB7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +43,15 @@
 		3B1441B120E74CFE000AB7D4 /* Dummy-EcommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dummy-EcommerceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1441B520E74CFE000AB7D4 /* Dummy_EcommerceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dummy_EcommerceTests.m; sourceTree = "<group>"; };
 		3B1441B720E74CFE000AB7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B1441C320E74E3C000AB7D4 /* ShopListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopListViewController.h; sourceTree = "<group>"; };
+		3B1441C420E74E3C000AB7D4 /* ShopListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopListViewController.m; sourceTree = "<group>"; };
+		3B1441C520E74E3C000AB7D4 /* ShopListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopListViewController.xib; sourceTree = "<group>"; };
+		3B1441C820E74E5F000AB7D4 /* ItemListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemListViewController.h; sourceTree = "<group>"; };
+		3B1441C920E74E5F000AB7D4 /* ItemListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemListViewController.m; sourceTree = "<group>"; };
+		3B1441CA20E74E5F000AB7D4 /* ItemListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListViewController.xib; sourceTree = "<group>"; };
+		3B1441CD20E74E77000AB7D4 /* ItemDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDetailsViewController.h; sourceTree = "<group>"; };
+		3B1441CE20E74E77000AB7D4 /* ItemDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemDetailsViewController.m; sourceTree = "<group>"; };
+		3B1441CF20E74E77000AB7D4 /* ItemDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +117,12 @@
 		3B1441C020E74D46000AB7D4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3B14419F20E74CFD000AB7D4 /* ViewController.h */,
-				3B1441A020E74CFD000AB7D4 /* ViewController.m */,
+				3B1441C320E74E3C000AB7D4 /* ShopListViewController.h */,
+				3B1441C420E74E3C000AB7D4 /* ShopListViewController.m */,
+				3B1441C820E74E5F000AB7D4 /* ItemListViewController.h */,
+				3B1441C920E74E5F000AB7D4 /* ItemListViewController.m */,
+				3B1441CD20E74E77000AB7D4 /* ItemDetailsViewController.h */,
+				3B1441CE20E74E77000AB7D4 /* ItemDetailsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -123,6 +139,9 @@
 			children = (
 				3B1441A220E74CFD000AB7D4 /* Main.storyboard */,
 				3B1441A720E74CFE000AB7D4 /* LaunchScreen.storyboard */,
+				3B1441C520E74E3C000AB7D4 /* ShopListViewController.xib */,
+				3B1441CA20E74E5F000AB7D4 /* ItemListViewController.xib */,
+				3B1441CF20E74E77000AB7D4 /* ItemDetailsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +226,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1441CC20E74E5F000AB7D4 /* ItemListViewController.xib in Resources */,
+				3B1441C720E74E3C000AB7D4 /* ShopListViewController.xib in Resources */,
+				3B1441D120E74E77000AB7D4 /* ItemDetailsViewController.xib in Resources */,
 				3B1441A920E74CFE000AB7D4 /* LaunchScreen.storyboard in Resources */,
 				3B1441A620E74CFE000AB7D4 /* Assets.xcassets in Resources */,
 				3B1441A420E74CFD000AB7D4 /* Main.storyboard in Resources */,
@@ -227,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1441A120E74CFD000AB7D4 /* ViewController.m in Sources */,
+				3B1441D020E74E77000AB7D4 /* ItemDetailsViewController.m in Sources */,
 				3B1441AC20E74CFE000AB7D4 /* main.m in Sources */,
+				3B1441CB20E74E5F000AB7D4 /* ItemListViewController.m in Sources */,
+				3B1441C620E74E3C000AB7D4 /* ShopListViewController.m in Sources */,
 				3B14419E20E74CFD000AB7D4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
