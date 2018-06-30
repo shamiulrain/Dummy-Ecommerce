@@ -10,7 +10,7 @@
 
 @interface Item : NSObject
 
-@property (nonatomic, strong) NSString *id;
+@property (nonatomic, strong) NSString *itemID;
 @property (nonatomic, strong) NSString *itemName;
 @property (nonatomic, strong) NSString *category;
 @property (nonatomic, assign) NSInteger price;

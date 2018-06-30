@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItemViewModel.h"
+#import "Item.h"
+#import "Shop.h"
 
 @interface ItemListViewController : UIViewController
 
-@property (nonatomic, strong) NSString *selectedShopID;
+@property (nonatomic, strong) Shop *selectedShop;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

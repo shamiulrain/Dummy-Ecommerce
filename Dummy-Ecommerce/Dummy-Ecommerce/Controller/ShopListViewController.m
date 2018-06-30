@@ -112,11 +112,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     Shop *selectedShop = [self.shopList objectAtIndex:indexPath.row];
-    NSString *selectedShopID = selectedShop.shopID;
     
     ItemListViewController *itemListVC = [[ItemListViewController alloc] init];
-    itemListVC.selectedShopID = selectedShopID;
-    
+    itemListVC.selectedShop = selectedShop;
     dispatch_async(dispatch_get_main_queue(), ^{
        
         [self.navigationController pushViewController:itemListVC animated:YES];

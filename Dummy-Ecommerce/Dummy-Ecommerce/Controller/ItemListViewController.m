@@ -8,7 +8,9 @@
 
 #import "ItemListViewController.h"
 
-@interface ItemListViewController ()
+@interface ItemListViewController ()<ItemViewModelDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, strong) NSMutableArray <Item *> *itemList;
 
 @end
 
@@ -16,22 +18,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.navigationItem.title = self.selectedShop.shopName;
+    
+    self.itemList = [[NSMutableArray alloc] init];
+    
+    ItemViewModel *itemViewModel = [[ItemViewModel alloc] init];
+    itemViewModel.delegate = self;
+    NSString *shopID = [NSString stringWithFormat:@"%ld",[self.selectedShop.shopID integerValue]];
+    [itemViewModel requestItemListForShopID:shopID];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - ItemViewModelDelegate
+
+-(void) itemListFetched:(NSArray<Item *> *)itemList forShopId:(NSString *)shopID{
+    
+    [self.itemList removeAllObjects];
+    [self.itemList addObjectsFromArray:itemList];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.collectionView reloadData];
+    });
+    
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -24,6 +24,7 @@
 		3B1441E420E75BED000AB7D4 /* ShopViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441E320E75BEC000AB7D4 /* ShopViewModel.m */; };
 		3B1441E820E762AC000AB7D4 /* ShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441E620E762AC000AB7D4 /* ShopTableViewCell.m */; };
 		3B1441E920E762AC000AB7D4 /* ShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441E720E762AC000AB7D4 /* ShopTableViewCell.xib */; };
+		3B1441EC20E76B0A000AB7D4 /* ItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441EB20E76B0A000AB7D4 /* ItemViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		3B1441E520E762AC000AB7D4 /* ShopTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopTableViewCell.h; sourceTree = "<group>"; };
 		3B1441E620E762AC000AB7D4 /* ShopTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopTableViewCell.m; sourceTree = "<group>"; };
 		3B1441E720E762AC000AB7D4 /* ShopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTableViewCell.xib; sourceTree = "<group>"; };
+		3B1441EA20E76B0A000AB7D4 /* ItemViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemViewModel.h; sourceTree = "<group>"; };
+		3B1441EB20E76B0A000AB7D4 /* ItemViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 			children = (
 				3B1441E220E75BEC000AB7D4 /* ShopViewModel.h */,
 				3B1441E320E75BEC000AB7D4 /* ShopViewModel.m */,
+				3B1441EA20E76B0A000AB7D4 /* ItemViewModel.h */,
+				3B1441EB20E76B0A000AB7D4 /* ItemViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				3B1441D020E74E77000AB7D4 /* ItemDetailsViewController.m in Sources */,
 				3B1441AC20E74CFE000AB7D4 /* main.m in Sources */,
 				3B1441CB20E74E5F000AB7D4 /* ItemListViewController.m in Sources */,
+				3B1441EC20E76B0A000AB7D4 /* ItemViewModel.m in Sources */,
 				3B1441C620E74E3C000AB7D4 /* ShopListViewController.m in Sources */,
 				3B14419E20E74CFD000AB7D4 /* AppDelegate.m in Sources */,
 				3B1441D720E751EE000AB7D4 /* Item.m in Sources */,
