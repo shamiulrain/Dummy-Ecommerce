@@ -49,7 +49,7 @@
         
         Shop *shop = [[Shop alloc] init];
         
-        shop.id = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"id"]];
+        shop.shopID = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"id"]];
         shop.shopName = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"shop_name"]];
         shop.address = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"address"]];
         shop.city = [NSString stringWithFormat:@"%@",[eachObject objectForKey:@"city"]];

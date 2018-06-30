@@ -10,7 +10,7 @@
 
 @interface Shop : NSObject
 
-@property (nonatomic, strong) NSString *id;
+@property (nonatomic, strong) NSString *shopID;
 @property (nonatomic, strong) NSString *shopName;
 @property (nonatomic, strong) NSString *imageURL;
 @property (nonatomic, strong) NSString *address;

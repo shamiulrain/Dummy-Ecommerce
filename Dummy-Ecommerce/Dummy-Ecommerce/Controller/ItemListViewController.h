@@ -10,4 +10,6 @@
 
 @interface ItemListViewController : UIViewController
 
+@property (nonatomic, strong) NSString *selectedShopID;
+
 @end

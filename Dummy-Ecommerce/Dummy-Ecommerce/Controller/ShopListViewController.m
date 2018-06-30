@@ -9,6 +9,7 @@
 #import "ShopListViewController.h"
 #import "Shop.h"
 #import "ShopTableViewCell.h"
+#import "ItemListViewController.h"
 
 @interface ShopListViewController ()<ShopViewModelDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -73,6 +74,21 @@
         if(shop.email && shop.email.length > 0) {
             cell.phoneEmailLabel.text = [NSString stringWithFormat:@"%@%@",cell.phoneEmailLabel.text,shop.email];
         }
+        
+    }
+    
+    if(shop.imageURL && shop.imageURL.length >0 ) {
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
+                       ^{
+                           NSURL *imageURL = [NSURL URLWithString:shop.imageURL];
+                           NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+                           
+                           dispatch_sync(dispatch_get_main_queue(), ^{
+                               
+                               cell.shopImageView.image= [UIImage imageWithData:imageData];
+                           });
+                       });
     }
     
     return cell;
@@ -94,6 +110,17 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Shop *selectedShop = [self.shopList objectAtIndex:indexPath.row];
+    NSString *selectedShopID = selectedShop.shopID;
+    
+    ItemListViewController *itemListVC = [[ItemListViewController alloc] init];
+    itemListVC.selectedShopID = selectedShopID;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+       
+        [self.navigationController pushViewController:itemListVC animated:YES];
+    });
     
     
 }
