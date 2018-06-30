@@ -27,6 +27,8 @@
 		3B1441EC20E76B0A000AB7D4 /* ItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441EB20E76B0A000AB7D4 /* ItemViewModel.m */; };
 		3B1441F020E7753A000AB7D4 /* ItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441EE20E7753A000AB7D4 /* ItemCollectionViewCell.m */; };
 		3B1441F120E7753A000AB7D4 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441EF20E7753A000AB7D4 /* ItemCollectionViewCell.xib */; };
+		3B1441F520E78AA6000AB7D4 /* ItemDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441F320E78AA6000AB7D4 /* ItemDetailsTableViewCell.m */; };
+		3B1441F620E78AA6000AB7D4 /* ItemDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441F420E78AA6000AB7D4 /* ItemDetailsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		3B1441ED20E7753A000AB7D4 /* ItemCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemCollectionViewCell.h; sourceTree = "<group>"; };
 		3B1441EE20E7753A000AB7D4 /* ItemCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemCollectionViewCell.m; sourceTree = "<group>"; };
 		3B1441EF20E7753A000AB7D4 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B1441F220E78AA6000AB7D4 /* ItemDetailsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDetailsTableViewCell.h; sourceTree = "<group>"; };
+		3B1441F320E78AA6000AB7D4 /* ItemDetailsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemDetailsTableViewCell.m; sourceTree = "<group>"; };
+		3B1441F420E78AA6000AB7D4 /* ItemDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +180,9 @@
 				3B1441ED20E7753A000AB7D4 /* ItemCollectionViewCell.h */,
 				3B1441EE20E7753A000AB7D4 /* ItemCollectionViewCell.m */,
 				3B1441EF20E7753A000AB7D4 /* ItemCollectionViewCell.xib */,
+				3B1441F220E78AA6000AB7D4 /* ItemDetailsTableViewCell.h */,
+				3B1441F320E78AA6000AB7D4 /* ItemDetailsTableViewCell.m */,
+				3B1441F420E78AA6000AB7D4 /* ItemDetailsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +286,7 @@
 				3B1441A920E74CFE000AB7D4 /* LaunchScreen.storyboard in Resources */,
 				3B1441A620E74CFE000AB7D4 /* Assets.xcassets in Resources */,
 				3B1441A420E74CFD000AB7D4 /* Main.storyboard in Resources */,
+				3B1441F620E78AA6000AB7D4 /* ItemDetailsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B1441E420E75BED000AB7D4 /* ShopViewModel.m in Sources */,
+				3B1441F520E78AA6000AB7D4 /* ItemDetailsTableViewCell.m in Sources */,
 				3B1441E820E762AC000AB7D4 /* ShopTableViewCell.m in Sources */,
 				3B1441F020E7753A000AB7D4 /* ItemCollectionViewCell.m in Sources */,
 				3B1441D020E74E77000AB7D4 /* ItemDetailsViewController.m in Sources */,
