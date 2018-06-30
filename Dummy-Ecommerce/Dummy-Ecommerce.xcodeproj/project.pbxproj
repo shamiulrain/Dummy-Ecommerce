@@ -21,6 +21,7 @@
 		3B1441D120E74E77000AB7D4 /* ItemDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441CF20E74E77000AB7D4 /* ItemDetailsViewController.xib */; };
 		3B1441D420E75181000AB7D4 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441D320E75181000AB7D4 /* Shop.m */; };
 		3B1441D720E751EE000AB7D4 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441D620E751EE000AB7D4 /* Item.m */; };
+		3B1441E420E75BED000AB7D4 /* ShopViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441E320E75BEC000AB7D4 /* ShopViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		3B1441D320E75181000AB7D4 /* Shop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
 		3B1441D520E751EE000AB7D4 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		3B1441D620E751EE000AB7D4 /* Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		3B1441E220E75BEC000AB7D4 /* ShopViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewModel.h; sourceTree = "<group>"; };
+		3B1441E320E75BEC000AB7D4 /* ShopViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 		3B14419B20E74CFD000AB7D4 /* Dummy-Ecommerce */ = {
 			isa = PBXGroup;
 			children = (
+				3B1441E120E75BD9000AB7D4 /* ViewModel */,
 				3B1441C220E74D5D000AB7D4 /* View */,
 				3B1441C120E74D55000AB7D4 /* Model */,
 				3B1441C020E74D46000AB7D4 /* Controller */,
@@ -154,6 +158,15 @@
 				3B1441CF20E74E77000AB7D4 /* ItemDetailsViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3B1441E120E75BD9000AB7D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B1441E220E75BEC000AB7D4 /* ShopViewModel.h */,
+				3B1441E320E75BEC000AB7D4 /* ShopViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1441E420E75BED000AB7D4 /* ShopViewModel.m in Sources */,
 				3B1441D020E74E77000AB7D4 /* ItemDetailsViewController.m in Sources */,
 				3B1441AC20E74CFE000AB7D4 /* main.m in Sources */,
 				3B1441CB20E74E5F000AB7D4 /* ItemListViewController.m in Sources */,
