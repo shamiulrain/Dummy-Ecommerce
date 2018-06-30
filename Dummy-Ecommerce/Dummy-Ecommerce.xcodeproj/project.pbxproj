@@ -19,6 +19,8 @@
 		3B1441CC20E74E5F000AB7D4 /* ItemListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441CA20E74E5F000AB7D4 /* ItemListViewController.xib */; };
 		3B1441D020E74E77000AB7D4 /* ItemDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441CE20E74E77000AB7D4 /* ItemDetailsViewController.m */; };
 		3B1441D120E74E77000AB7D4 /* ItemDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441CF20E74E77000AB7D4 /* ItemDetailsViewController.xib */; };
+		3B1441D420E75181000AB7D4 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441D320E75181000AB7D4 /* Shop.m */; };
+		3B1441D720E751EE000AB7D4 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441D620E751EE000AB7D4 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,10 @@
 		3B1441CD20E74E77000AB7D4 /* ItemDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDetailsViewController.h; sourceTree = "<group>"; };
 		3B1441CE20E74E77000AB7D4 /* ItemDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemDetailsViewController.m; sourceTree = "<group>"; };
 		3B1441CF20E74E77000AB7D4 /* ItemDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailsViewController.xib; sourceTree = "<group>"; };
+		3B1441D220E75181000AB7D4 /* Shop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		3B1441D320E75181000AB7D4 /* Shop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		3B1441D520E751EE000AB7D4 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		3B1441D620E751EE000AB7D4 /* Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,10 @@
 		3B1441C120E74D55000AB7D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3B1441D220E75181000AB7D4 /* Shop.h */,
+				3B1441D320E75181000AB7D4 /* Shop.m */,
+				3B1441D520E751EE000AB7D4 /* Item.h */,
+				3B1441D620E751EE000AB7D4 /* Item.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 				3B1441CB20E74E5F000AB7D4 /* ItemListViewController.m in Sources */,
 				3B1441C620E74E3C000AB7D4 /* ShopListViewController.m in Sources */,
 				3B14419E20E74CFD000AB7D4 /* AppDelegate.m in Sources */,
+				3B1441D720E751EE000AB7D4 /* Item.m in Sources */,
+				3B1441D420E75181000AB7D4 /* Shop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
