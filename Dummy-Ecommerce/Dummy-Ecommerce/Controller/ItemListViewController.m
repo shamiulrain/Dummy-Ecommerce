@@ -29,7 +29,7 @@
     
     static NSString *identifier = @"item_cell";
     [self.collectionView registerNib:[UINib nibWithNibName:@"ItemCollectionViewCell" bundle:[NSBundle mainBundle]]
-        forCellWithReuseIdentifier:@"item_cell"];
+        forCellWithReuseIdentifier:identifier];
     
     ItemViewModel *itemViewModel = [[ItemViewModel alloc] init];
     itemViewModel.delegate = self;
