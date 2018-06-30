@@ -52,9 +52,20 @@
         shop.id = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"id"]];
         shop.shopName = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"shop_name"]];
         shop.address = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"address"]];
-        shop.email = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"email"]];
-        shop.phone = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"phone"]];
+        shop.city = [NSString stringWithFormat:@"%@",[eachObject objectForKey:@"city"]];
         shop.imageURL = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"image"]];
+        
+        
+        NSString *email = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"email"]];
+        NSString *phone = [NSString stringWithFormat:@"%@", [eachObject objectForKey:@"phone"]];
+        
+        if(![email isEqualToString:@"<null>"]) {
+            shop.email = email;
+        }
+        
+        if(![phone isEqualToString:@"<null"]) {
+            shop.phone = phone;
+        }
         
         [shopList addObject:shop];
     }

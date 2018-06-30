@@ -22,6 +22,8 @@
 		3B1441D420E75181000AB7D4 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441D320E75181000AB7D4 /* Shop.m */; };
 		3B1441D720E751EE000AB7D4 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441D620E751EE000AB7D4 /* Item.m */; };
 		3B1441E420E75BED000AB7D4 /* ShopViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441E320E75BEC000AB7D4 /* ShopViewModel.m */; };
+		3B1441E820E762AC000AB7D4 /* ShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1441E620E762AC000AB7D4 /* ShopTableViewCell.m */; };
+		3B1441E920E762AC000AB7D4 /* ShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1441E720E762AC000AB7D4 /* ShopTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		3B1441D620E751EE000AB7D4 /* Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		3B1441E220E75BEC000AB7D4 /* ShopViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewModel.h; sourceTree = "<group>"; };
 		3B1441E320E75BEC000AB7D4 /* ShopViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewModel.m; sourceTree = "<group>"; };
+		3B1441E520E762AC000AB7D4 /* ShopTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopTableViewCell.h; sourceTree = "<group>"; };
+		3B1441E620E762AC000AB7D4 /* ShopTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopTableViewCell.m; sourceTree = "<group>"; };
+		3B1441E720E762AC000AB7D4 /* ShopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +161,9 @@
 				3B1441C520E74E3C000AB7D4 /* ShopListViewController.xib */,
 				3B1441CA20E74E5F000AB7D4 /* ItemListViewController.xib */,
 				3B1441CF20E74E77000AB7D4 /* ItemDetailsViewController.xib */,
+				3B1441E720E762AC000AB7D4 /* ShopTableViewCell.xib */,
+				3B1441E520E762AC000AB7D4 /* ShopTableViewCell.h */,
+				3B1441E620E762AC000AB7D4 /* ShopTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B1441CC20E74E5F000AB7D4 /* ItemListViewController.xib in Resources */,
+				3B1441E920E762AC000AB7D4 /* ShopTableViewCell.xib in Resources */,
 				3B1441C720E74E3C000AB7D4 /* ShopListViewController.xib in Resources */,
 				3B1441D120E74E77000AB7D4 /* ItemDetailsViewController.xib in Resources */,
 				3B1441A920E74CFE000AB7D4 /* LaunchScreen.storyboard in Resources */,
@@ -273,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B1441E420E75BED000AB7D4 /* ShopViewModel.m in Sources */,
+				3B1441E820E762AC000AB7D4 /* ShopTableViewCell.m in Sources */,
 				3B1441D020E74E77000AB7D4 /* ItemDetailsViewController.m in Sources */,
 				3B1441AC20E74CFE000AB7D4 /* main.m in Sources */,
 				3B1441CB20E74E5F000AB7D4 /* ItemListViewController.m in Sources */,

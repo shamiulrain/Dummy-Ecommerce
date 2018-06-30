@@ -8,6 +8,7 @@
 
 #import "ShopListViewController.h"
 #import "Shop.h"
+#import "ShopTableViewCell.h"
 
 @interface ShopListViewController ()<ShopViewModelDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -39,18 +40,47 @@
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"shop_cell"];
-    if (cell == nil) {
+    
+    Shop *shop = [self.shopList objectAtIndex:indexPath.row];
+    
+    static NSString *simpleTableIdentifier = @"shop_cell";
+    
+    ShopTableViewCell *cell = (ShopTableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ShopTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    if(shop.shopName && shop.shopName.length > 0) {
+        cell.nameLabel.text = [NSString stringWithFormat:@"Shop name: %@",shop.shopName];
+    }
+    
+    if(shop.address && shop.address.length > 0) {
+        cell.addressLabel.text = [NSString stringWithFormat:@"Address: %@",shop.address];
+    }
+    
+    if(shop.city && shop.city.length > 0) {
+        cell.cityLabel.text = [NSString stringWithFormat:@"City: %@",shop.city];
+    }
+    if((shop.phone && shop.phone.length > 0) && (shop.email && shop.email.length)) {
+        cell.phoneEmailLabel.text = [NSString stringWithFormat:@"Contact: "];
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"shop_cell"];
+        if(shop.phone && shop.phone.length > 0) {
+            cell.phoneEmailLabel.text = [NSString stringWithFormat:@"%@%@, ",cell.phoneEmailLabel.text,shop.phone];
+        }
         
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
-        cell.textLabel.text = @"test";
-        
+        if(shop.email && shop.email.length > 0) {
+            cell.phoneEmailLabel.text = [NSString stringWithFormat:@"%@%@",cell.phoneEmailLabel.text,shop.email];
+        }
     }
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 80.0f;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
